@@ -925,3 +925,9 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
 # TMP
 on property:sys.boot_completed=1
     exec_background -- /system/bin/settings put system min_refresh_rate 60
+
+# Hide Magisk
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
