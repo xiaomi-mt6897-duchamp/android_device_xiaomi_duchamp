@@ -78,6 +78,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
+    BesLoudness \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
