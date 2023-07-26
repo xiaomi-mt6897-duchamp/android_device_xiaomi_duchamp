@@ -339,6 +339,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# PowerOffAlarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # USB
 $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
 
