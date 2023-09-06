@@ -101,6 +101,9 @@ vendor.connsys.driver.ready=no
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
+# displayfeature
+persist.sys.sf.native_mode=258
+
 # Display
 debug.graphics.game_default_frame_rate.disabled=true
 debug.mediatek.appgamepq_compress=1
