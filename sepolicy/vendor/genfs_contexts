@@ -70,3 +70,6 @@ genfscon sysfs /devices/platform/soc/1e000000.adspsys/wakeup                    
 genfscon sysfs /devices/platform/soc/1f000000.mdp/wakeup                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1f800000.mmlsys-config/wakeup                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/power_supply/mtk-gauge/wakeup                                                           u:object_r:sysfs_wakeup:s0
+
+# USB
+genfscon sysfs /devices/platform/rt-pd-manager/typec/port0                         u:object_r:sysfs_usb_nonplat:s0
