@@ -187,6 +187,6 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
         </service>
-                
+
     </application>
 </manifest>
