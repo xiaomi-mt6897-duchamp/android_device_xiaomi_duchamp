@@ -315,6 +315,7 @@ vendor.powerhal.interaction.offset=0
 
 # Radio
 persist.radio.multisim.config=dsds
+persist.sys.radio.force_lte_ca=true
 persist.vendor.md_c2k_cap_dep_check=0
 persist.vendor.mims_support=2
 persist.vendor.mtk.vodata.allow_rat=1
