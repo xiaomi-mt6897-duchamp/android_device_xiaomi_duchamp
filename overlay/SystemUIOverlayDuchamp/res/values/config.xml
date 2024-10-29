@@ -43,7 +43,7 @@
     </integer-array>
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
-    <integer name="config_keyguardMaxRefreshRate">60</integer>
+    <integer name="config_keyguardMaxRefreshRate">120</integer>
 
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom">8dp</dimen>
