@@ -38,7 +38,9 @@ lib_fixups: lib_fixups_user_type = {
      'libultrahdr',
      'vendor.mediatek.hardware.videotelephony-V1-ndk',
      'vendor.xiaomi.hardware.fingerprintextension-V1-ndk',
-     'vendor.xiaomi.hw.touchfeature-V1-ndk'): lib_fixup_vendor_suffix,
+     'vendor.xiaomi.hw.touchfeature-V1-ndk',
+     'vendor.mediatek.hardware.camera.isphal@1.0',
+     'vendor.mediatek.hardware.camera.isphal-V1-ndk'): lib_fixup_vendor_suffix,
     ('libsink',): lib_fixup_remove,
 }
 
@@ -71,7 +73,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.biometrics.common-V3-ndk.so', 'android.hardware.biometrics.common-V4-ndk.so')
         .replace_needed('android.hardware.biometrics.fingerprint-V3-ndk.so', 'android.hardware.biometrics.fingerprint-V4-ndk.so'),
 
-    ('vendor/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897',
+    ('system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so',
+     'vendor/bin/hw/mt6897/android.hardware.graphics.allocator-V2-service-mediatek.mt6897',
      'vendor/lib64/egl/mt6897/libGLES_mali.so',
      'vendor/lib64/hw/mt6897/android.hardware.graphics.allocator-V2-mediatek.so',
      'vendor/lib64/hw/mt6897/android.hardware.graphics.mapper@4.0-impl-mediatek.so',
@@ -93,6 +96,11 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/libmtkcam_grallocutils_aidlv1helper.so'): blob_fixup()
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so')
         .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V5-ndk.so'),
+
+     ('system_ext/lib64/libcamera_algoup_jni.xiaomi.so',
+      'system_ext/lib64/libcamera_mianode_jni.xiaomi.so',
+      'system_ext/lib64/libcamera_ispinterface_jni.xiaomi.so'): blob_fixup()
+        .add_needed('libgui_shim_miuicamera.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
