@@ -159,4 +159,9 @@
         <name>vendor.mediatek.hardware.videotelephony</name>
         <fqname>IVideoTelephony/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.engineermode</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.3::IEmd/EmHidlServer</fqname>
+    </hal>
 </manifest>
