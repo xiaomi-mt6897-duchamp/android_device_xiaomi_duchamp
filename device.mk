@@ -237,6 +237,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(DEVICE_PATH)/vendor_logtag.mk
 
+# Quick Tap
+PRODUCT_PACKAGES += \
+    ColumbusService
+
 # SKU
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/sku/,$(TARGET_COPY_OUT_ODM)/etc)
