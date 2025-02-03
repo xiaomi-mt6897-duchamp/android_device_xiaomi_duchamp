@@ -5,7 +5,7 @@ echo "Applying source modifications..."
 echo "Fetching and applying UDFPS patch for frameworks/base..."
 cd frameworks/base
 git fetch https://github.com/xiaomi-mt6897-duchamp/frameworks_base
-git cherry-pick 73866f3981b709d659325f9e3eea0ab044226ac5 844244e7870421d52611f3d661566d22d6bf35c3
+git cherry-pick 1338dbc45b052a74e0a6fe5f1236fac5836aaef1 41c5fdec468450b87378c6ccddd5aafb2dcb6939
 cd ../../
 
 # Hardware Compatibility Fixes
