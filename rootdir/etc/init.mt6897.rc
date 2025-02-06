@@ -921,3 +921,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     task_profiles ProcessCapacityHigh HighPerformance
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
+
+# TMP
+on property:sys.boot_completed=1
+    exec_background -- /system/bin/settings put system min_refresh_rate 60
