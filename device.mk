@@ -354,6 +354,9 @@ PRODUCT_COPY_FILES += \
 # Virtualization service
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
+# V4A
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \

@@ -28,4 +28,9 @@ git clone https://github.com/zenin1504/private-keys.git /tmp/keys
 rm -rf vendor/derp/signing/keys
 mv /tmp/keys vendor/derp/signing/keys
 
+# V4A
+git clone https://github.com/xiaomi-mt6897-duchamp/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
+echo "Removing accidentally clone..."
+rm -rf packages/yapps/ViPER4AndroidFX
+
 echo "All operations completed successfully!"
