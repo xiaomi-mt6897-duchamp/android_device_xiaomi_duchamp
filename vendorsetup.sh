@@ -12,7 +12,7 @@ cd ../../
 echo "Fetching and applying hardware compatibility fixes for hardware/lineage/compat..."
 cd hardware/lineage/compat
 git fetch https://github.com/xiaomi-mt6897-duchamp/android_hardware_lineage_compat
-git cherry-pick 14b0b5463f2004b3b54603448eb8fe63ea2fb709 769765172a6bc752f27cac191c49e683a4dbe5d3 9a046ea7e5899adc38ab04fe24eb34859fe4d779
+git cherry-pick 9a046ea7e5899adc38ab04fe24eb34859fe4d779
 cd ../../../
 
 # Hardware Legacy Modifications
