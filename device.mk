@@ -128,6 +128,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/mgc/config.mk)
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
