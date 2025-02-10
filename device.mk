@@ -188,10 +188,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# MiuiCamera
-PRODUCT_PACKAGES += \
-    MiuiCameraOverlayIcon
-
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -369,14 +365,6 @@ $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk
 
 # V4A
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
-# Miui Camera Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-miuicamera.xml
-
-# Sysconfig
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/miuicamera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/miuicamera-hiddenapi-package-allowlist.xml
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
