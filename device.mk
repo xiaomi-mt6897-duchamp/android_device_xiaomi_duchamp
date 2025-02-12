@@ -175,7 +175,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
    FrameworksResOverlayDuchamp \
    SettingsProviderOverlayDuchampPOCO \
-   SettingsResOverlayDerpDuchamp \
    SettingsProviderOverlayDuchampRedmi \
    SettingsResOverlayDuchamp \
    SystemUIOverlayDuchamp \
