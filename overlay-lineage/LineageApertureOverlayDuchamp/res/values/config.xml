@@ -6,4 +6,10 @@
 <resources>
     <!-- Enable auxiliary cameras selector. -->
     <bool name="config_enableAuxCameras">true</bool>
+
+    <!-- Enable auxiliary cameras for Google Camera -->
+    <string-array name="camera_auxiliary_packages" translatable="false">
+        <item>com.google.android.GoogleCamera</item>
+        <item>com.google.android.GoogleCameraEng</item>
+    </string-array>
 </resources>
