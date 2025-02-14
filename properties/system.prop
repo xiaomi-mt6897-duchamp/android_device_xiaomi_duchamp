@@ -1,3 +1,7 @@
+# Dalvik Hyperthreading
+persist.sys.dalvik.hyperthreading=true
+persist.sys.dalvik.multithread=true
+
 # RIL Powersaving
 persist.radio.add_power_save=1 
 pm.sleep_mode=1 

@@ -195,6 +195,9 @@ PRODUCT_PACKAGES += \
    LineageApertureOverlayDuchamp \
    LineageDialerDuchamp
 
+# PixelOverlay
+$(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
