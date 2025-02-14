@@ -115,6 +115,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# DSP
+PRODUCT_PACKAGES += \
+    DSPVolumeSynchronizer
+
 # Dalvik configs
 PRODUCT_VENDOR_PROPERTIES += \
     dalvik.vm.heapstartsize=24m \
