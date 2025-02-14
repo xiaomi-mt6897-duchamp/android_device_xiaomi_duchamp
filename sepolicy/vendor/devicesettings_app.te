@@ -1,0 +1,1 @@
+allow devicesettings_app sysfs_therm:dir search;
