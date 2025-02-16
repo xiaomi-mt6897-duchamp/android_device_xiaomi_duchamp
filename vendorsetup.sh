@@ -22,6 +22,13 @@ git fetch https://android.googlesource.com/platform/hardware/libhardware_legacy 
 git cherry-pick 54bb5d03278152e696c7bff4607278790ac73057
 cd ../../
 
+# Nuke refresh rate selector
+echo "Nuking refresh rate selector so no one mess with it"
+cd  packages/apps/Settings
+git fetch https://github.com/xiaomi-mt6897-duchamp/android_packages_apps_Settings
+git cherry-pick 697a70a15351479b048e17205686a71147b92504
+cd ../../../
+
 # Private Keys Setup
 echo "Setting up private signing keys..."
 git clone https://github.com/zenin1504/private-keys.git /tmp/keys
